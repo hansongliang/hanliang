@@ -1,0 +1,36 @@
+/* 1text-align行内元素居中 */
+#box1{
+    width: 200px;
+    height: 200px;
+    background: #dddddd;
+    text-align: center;
+}
+/*  margin:auto块级元素居中*/
+#box2{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    background: #dddddd;
+}
+/* 2设置 display: inline 方法居中 */
+.box3{text-align:center;}
+.box3 ul{list-style:none;margin:0;padding:0;display:inline;}
+.box3 li{margin-right:8px;display:inline;}
+/* 3设置 position:relative 和 left:50% */
+.box4{
+    float:left;
+    position: relative;
+    left: 50%;
+}
+.child4{
+    position: relative;
+    left: -50%;
+}
+/* flex布局居中 */
+.box5{
+    display: flex;
+    flex-direction: column;
+}
+.child5{
+    align-self: center;
+}

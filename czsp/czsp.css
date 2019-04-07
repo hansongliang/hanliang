@@ -1,0 +1,102 @@
+/* 1、position元素已知宽度；元素设置为：position: relative;子元素设置为：position: absolute;距上50%，据左50%，然后减去元素自身宽度的距离就可以实现*/
+.box1 {
+    background-color: #FF8C00;
+    width: 300px;  
+    height: 300px; 
+    position: relative;  
+}
+.child1 { 
+    background-color: #F00; 
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -50px;
+}
+    /*2、position transform 元素未知宽度
+如果元素未知宽度，只需将上面例子中的margin: -50px 0 0 -50px;替换为：transform: translate(-50%,-50%);  */
+.box2 {
+    background-color: #FF8C00; 
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.child2 {
+    background-color: #F00;
+    width: 100px;
+    height: 100px; 
+    position: absolute;  
+    left: 50%;   
+    top: 50%;   
+    transform: translate(-50%,-50%);
+}
+    /*3. flex布局 */
+.box3 {
+        background-color: #FF8C00;  
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;  
+        align-items: center;       
+}  
+.child3 {
+       background-color: #F00;
+       width: 100px;
+       height: 100px;
+}
+/* 4、table-cell布局 */
+.box4 { 
+    background-color: #FF8C00;
+    width: 300px;
+    height: 300px;  
+    display: table; 
+}
+.child4 { background-color: #F00;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}  
+.inner { background-color: #000;
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+}
+/* 5、absolute + calc（定宽） */
+.box5 {
+    position: relative;
+    background: #F00;
+    width: 400px;
+    height: 160px; 
+}
+.child5 {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: #000;
+    left:-webkit-calc((400px - 200px)/2);
+    top:-webkit-calc((160px - 50px)/2);
+    left:-moz-calc((400px - 200px)/2);
+    top:-moz-calc((160px - 50px)/2);
+    left:calc((400px - 200px)/2);
+    top:calc((160px - 50px)/2);
+}
+/* 绝对定位方法：绝对定位下top left right bottom 都设置0 */
+#box6{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background:blue;
+}
+.child6{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position:absolute;
+    left:0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+

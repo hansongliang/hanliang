@@ -1,0 +1,28 @@
+
+  /* 三角形 */
+   .d1{
+    position: absolute;
+    width: 0px; 
+    height: 0px;
+    border-width: 50px;
+    border-style: solid;
+    border-color:#FFCCCC transparent transparent transparent;
+   }
+   /* 圆 */
+   .d2{
+    width: 100px;
+    height: 100px;
+    border:1px solid red;
+    -moz-border-radius: 50px;   /*仅Firefox支持，实现圆角效果； */
+   -webkit-border-radius: 50px;/*仅Safari，chrome支持，实现圆角效果；*/
+   border-radius:50px; /*F，O（Opera），S，C支持*/
+   -khtml-border-radius: 50px;/*S,C支持*/
+   }
+   /* 扇形 */
+.d3{
+   width: 0;
+   height: 0;
+   border: 50px solid;
+   border-color:#FFCCCC transparent transparent transparent;
+   border-radius: 50px;
+}

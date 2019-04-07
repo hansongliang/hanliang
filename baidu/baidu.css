@@ -1,0 +1,88 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font: 12px arial;
+    display: block;
+}
+/* 顶部导航 */
+.header {
+    margin-top: 10px;
+    text-align: right;
+    padding-top: 10px; 
+    } 
+.a_header{
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 9px;
+    margin-right: 10px;
+    cursor: pointer;
+    }
+
+.menu {
+    display:none;
+    text-align: center;
+    background-color: #f4f4f4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 300px;
+    
+    pointer-events: none;
+    }
+    /*鼠标置于更多产品上时显示*/
+.more:hover +.menu {
+    display: block
+    }
+.more {
+    background: #3388ff;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 3px;
+    }
+    /* 中间 */
+.content {
+    margin-top: 100px;
+    }
+.search {   
+    width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    }
+#input {
+    width: 550px;
+    height: 30px;
+    border: 1px solid gray;
+    outline: none;
+    }
+    /*聚焦时*/
+#input:focus {
+    border: 1px solid #38f;
+    }
+#go {
+    color:white;
+    padding: 10px 18px 9px 18px;
+    font-size: 14px;
+    background-color: #38f;
+    text-decoration: none;
+    vertical-align: middle;
+
+    }  
+    /* 底部二维码和链接 */
+    #bottom{
+       position: absolute;
+       display: inline-block;
+       width: 100%;
+       bottom: 0%;
+       margin-bottom: 35px;
+    } 
+    #code{       
+        text-align: center;
+        padding-bottom: 10px;
+        bottom: 15%;       
+    }
+ 

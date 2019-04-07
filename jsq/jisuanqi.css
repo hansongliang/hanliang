@@ -1,0 +1,23 @@
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+td{
+    width: 100px;
+    line-height: 50px;
+}
+.btn{
+    width: 100px;
+    line-height: 50px;
+    font-size: x-large;
+}
+.btn_click{
+    width: 202px;
+    line-height: 50px;
+    font-size: x-large;
+}
+.txt{
+    width: 400px;
+    line-height: 70px;
+    font-size: x-large;text-align: right;
+}
